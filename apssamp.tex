@@ -409,38 +409,11 @@ realizations from fifteen thousand to two hundred forty thousand.}
 \label{fig:R12_l10_samples}
 \end{figure}
 
-
-\section{Discussions and Conclusions}
-In summary, we perform Monte Carlo simulations of the three dimensional
-Edwards-Anderson model in a finite external field. The goal is to reexamine the long 
-standing problem of whether mean field behavior, specifically a spin glass phase, can
-exist in such a model without time-reversal symmetry. We focus on the equilibrium quantities
-of this notoriously difficult system. By taking advantage of the new commodity multi-threaded 
-graphic computing units architecture we drastically reduce the computation time. 
-The results for the Binder ratio and correlation length show no signal of intersection, thus they point to the absence of spin glass transition
-according to conventional wisdom. On the other hand, the ratio of susceptibilities 
-$R_{12}$ does show crossing behavior for relatively small system sizes ($L=6,8,10$). We did perform simulations for larger system sizes, 
-but we are not confident that those simulations reach equilibrium since the data is too noisy in particular for $R_{12}$.
-With the present system sizes and the statistical error bar, a rigorous data analysis does not seem to deliver unbiased information. 
-This situation is rather discouraging, as simulations at this low temperature for much larger system sizes 
-using the present method are daunting.  We show that the distribution of 
-susceptibilities are not normally distributed, and calculate ratio of susceptibilities
-from the geometrical average, but we can not reach a definitive conclusion.
-
-This calls for a more thorough study on the model with different approaches.
-Possible directions include: 1) using models with continuous random distribution which are 
-easier to thermalize than that with bimodal distribution; 2) analyzing the
-data for the distribution of the overlap parameter, instead of average quantities. We notice a preprint before
-we finished the present paper where the conditioning variate method
-is used to expose the silent features from the data \cite{Baity-Jesi-etal-2014}. 
-
-
-\section{Additional discussion}
-
 We studied the distribution of the susceptibilities. We calculated the susceptibility
 for each disorder realization, and plotted the histogram at the lowest temperature,
 $\beta=1.8$.
-The distribution of susceptibilities are highly skewed, and dominated by rare
+The distribution of susceptibilities are highly skewed. 
+The mean of the distribution is dominated by rare
 events, as suggested in Fig \ref{fig:hist_chi}. 
 The non-Gaussian nature of the distribution suggests that the mean value might 
 not be a good indicator. 
@@ -456,7 +429,7 @@ not be a good indicator.
 Here, we used the geometrical average over the susceptibilities to find $R_{12}$,
 as shown in Fig \ref{fig:r12_gmean}.
 We see that the lines are quite different from those obtained with arithmetic 
-mean, but we cannot reach a definitive conclusion with this method either.
+mean, and the crossings appear at different temperatures. 
 
 \begin{figure}[ht]
   \centering
@@ -467,11 +440,44 @@ as a function of inverse temperature, for different system sizes.
 }
 \end{figure}
 
+
+\section{Discussions and Conclusions}
+In summary, we perform Monte Carlo simulations of the three dimensional
+Edwards-Anderson model in a finite external field. The goal is to reexamine the long 
+standing problem of whether mean field behavior, specifically a spin glass phase, can
+exist in such a model without time-reversal symmetry. We focus on the equilibrium quantities
+of this notoriously difficult system. By taking advantage of the new commodity multi-threaded 
+graphic computing units architecture we drastically reduce the computation time. 
+The results for the Binder ratio and correlation length show no signal of intersection, thus they point to the absence of spin glass transition
+according to conventional wisdom. On the other hand, the ratio of susceptibilities 
+$R_{12}$ does show crossing behavior for relatively small system sizes ($L=6,8,10$). 
+We did perform simulations for larger system sizes, 
+but we are not confident that those simulations reach equilibrium since the data is too noisy in particular for $R_{12}$.
+With the present system sizes and the statistical error bar, a rigorous data 
+analysis does not seem to deliver unbiased information. 
+This situation is rather discouraging, as simulations at this low temperature 
+for much larger system sizes using the present method are daunting. 
+Although we can not reach a definitive conclusion on whether a spin glass phase 
+transition under a finite magnetic field,
+we show that the distribution of susceptibilities are not normally distributed 
+and mean is dominated by rare events.
+
+This calls for a more thorough study on the model with different approaches.
+Possible directions include: 1) using models with continuous random distribution which are 
+easier to thermalize than that with bimodal distribution; 2) analyzing the
+data for the distribution of the overlap parameter, instead of average quantities. We notice a preprint before
+we finished the present paper where the conditioning variate method
+is used to expose the silent features from the data \cite{Baity-Jesi-etal-2014}. 
+
+
+\appendix
+\section{Additional discussion}
+
 We further tested with a bigger system size, $L=16$. We used 11,200 realizations,
 and divide them into four batches, each containing 2800 samples. We then calculated
 the $R_{12}$ for the four batches, and compared them, as shown in Fig \ref{fig:l16_r12}. 
 The results shows that a few thousand realizations is not enough, even for a 
-bigger system size.
+system size of L=16. 
 
 
 \begin{figure}[ht]

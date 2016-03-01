@@ -1,0 +1,38 @@
+
+
+We would like the thank the referee for a careful review of our manuscript
+and we would like to address the issues that were raised. 
+
+Comment:
+The authors conclude that "a rigorous data
+analysis does not seem to deliver unbiased information", which
+suggests that this paper cannot give a conclusion.
+
+Our reply:
+As the referee points out, we cannot reach a definite conclusion on
+whether there is a phase transition in the spin glass under a small
+magnetic field. However, with further analysis of our data, we show that
+the skewed distribution of susceptibilities are the reason for the
+bad behavior of $R_{12}$, which leads to our new conclusion that
+this quantity is dominated by rare events, and thus a huge number of
+realizations are required to reach meaningful results.
+
+Comment:
+If I was going to try to do a calculation like this one, I
+would use h= 0.25, at least, and I would expect to need to get to at
+least L= 16 to get a meaningful result. The authors may say that these
+parameters cannot be achieved in practice at the present time.
+However, I also think that 1000 samples at L= 16 might be adequate, so
+maybe it could be done.
+
+Our reply:
+The referee suggests that we study 1000 samples at L=16, so
+we did simulated 11,200 samples at L=16, and included the results in
+the discussion. We divided the samples into 4 groups, each with 2800
+samples, and calculated $R_{12}$ for each group. The results for
+the five groups are very different from each other, especially at low
+temperature. Thus, We showed that due to the nature of the susceptibilities,
+a small number of samples such as 1000 is not adequate to give meaningful
+results.
+
+We hope that the current version of the paper is found suitable for publication.
