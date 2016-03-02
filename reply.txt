@@ -1,7 +1,22 @@
+Dear Editor:
+We would like to resubmit our revised manuscript “Three-dimensional 
+Edwards-Anderson spin glass model in an external field”, which was previously 
+submitted to Physical Review E under the number ER11202.
 
+We believe that this work is the first attempt to use the ratio of susceptibilities 
+to study the 3D Edwards-Anderson spin glass model in an external field.
+This quantity works well in four dimensional Edwards-Anderson spin glass model.
 
-We would like the thank the referee for a careful review of our manuscript
-and we would like to address the issues that were raised. 
+We would like the thank the referee for a careful review of our manuscript.
+The first referee recommended the publication of our work. As he points out,
+we honestly present our results, which reveal the difficulty with current 
+methods and computing capabilities in dealing with this problem. 
+The other two referees suggested against the publication of our work, due 
+to the lack of a definitive conclusion. We believe that although the
+results are not conclusive, they should provide some insight into this problem,
+and may be helpful to other people studying this field. 
+
+We would like to address the issues that were raised. 
 
 Comment:
 The authors conclude that "a rigorous data
@@ -15,7 +30,8 @@ magnetic field. However, with further analysis of our data, we show that
 the skewed distribution of susceptibilities are the reason for the
 bad behavior of $R_{12}$, which leads to our new conclusion that
 this quantity is dominated by rare events, and thus a huge number of
-realizations are required to reach meaningful results.
+realizations are required to reach meaningful results, which is a challenge
+to the computing capability we currently have.
 
 Comment:
 If I was going to try to do a calculation like this one, I
@@ -36,7 +52,92 @@ temperature. Thus, We showed that due to the nature of the susceptibilities,
 a small number of samples such as 1000 is not adequate to give meaningful
 results.
 
-As suggested by the first referee, we honestly present
-our results, which reveal the difficulty with current methods and computing
-capabilities in dealing with this problem. We hope that the current version of
-the paper is found suitable for publication.
+
+Summary of changes to the manuscript:
+We added figures and discussions for the distribution of susceptibilities
+in section III.
+We added the results for geometric average in section III.
+We adjust the conclusion part to discuss the results we obtained 
+	with the distribution and the geometric average.
+We added some reference.
+We added figure and discussion for a simulation of L=16 with a small 
+number of realizations in the appendix.
+
+
+We hope that the current version of the paper is found suitable for publication.
+
+
+
+
+Best,
+
+
+
+
+
+Original referee opinions:
+
+
+----------------------------------------------------------------------
+Report of the First Referee -- ER11202/Feng
+----------------------------------------------------------------------
+
+This is another in a long series of papers where people throw very
+large computational resources at the spin glass problem and end up
+with inconclusive results. This has been going on for decades. I
+compliment these authors on being honest about their results and not
+trying to present them as more conclusive than they really are.
+Unfortunately, some others publishing on this topic are less honest.
+For this reason, I think it would be better to publish this paper than
+not. We would not want it to appear that you can only publish spin
+glass simulations that exaggerate their own significance. But it would
+have been better if instead the authors had used those massive
+computational efforts for something more productive.
+
+----------------------------------------------------------------------
+Report of the Second Referee -- ER11202/Feng
+----------------------------------------------------------------------
+
+This paper studies a spin-glass transition under the magnetic field,
+which is very important to clarify the low-temperature nature of the
+spin glasses. The authors performed Monte Carlo simulations using
+GPGPU and obtained several results. Some of them are conventionally
+investigated quantities such as the spin-glass susceptibility, the
+Binder ratio, and the scaled correlation length. In addition, the
+authors calculated R_{12} quantity recently proposed. The results are
+not consistent regarding the existence of the spin-glass transition:
+the conventional quantities suggest no transition but the R_{12}
+suggests a transition. The authors conclude that "a rigorous data
+analysis does not seem to deliver unbiased information", which
+suggests that this paper cannot give a conclusion.
+
+I think that this paper is not suitable for publication.
+
+As the authors wrote in the conclusion, nothing is clarified in this
+paper. The numerical method presented in this paper is not good for
+the spin-glass problem. This is an only information I received from
+this paper, and I believe that it is not meaningful to the readers of
+PRE.
+
+----------------------------------------------------------------------
+Report of the Third Referee -- ER11202/Feng
+----------------------------------------------------------------------
+
+Unfortunately, the authors have made a poor choice of input parameters
+for their simulation. They use L= 6, 8 and 10, and h= 0.10. As is well
+known, with these small values of L one cannot really tell what is
+going on even for zero h. According to Krzakala et al. in authors'
+ref. 59, h_c= 0.65 at T= 0. Thus h= 0.10 is a very small field. For
+such a small field at the small values of L used here, one has no
+possibility of having reached a putative finite-h scaling regime.
+
+In my opinion, nothing new is learned from the work presented in this
+manuscript. If I was going to try to do a calculation like this one, I
+would use h= 0.25, at least, and I would expect to need to get to at
+least L= 16 to get a meaningful result. The authors may say that these
+parameters cannot be achieved in practice at the present time.
+However, I also think that 1000 samples at L= 16 might be adequate, so
+maybe it could be done.
+
+In my opinion, this manuscript is not suitable for publication in the
+Physical Review.
