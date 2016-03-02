@@ -25,6 +25,7 @@ parameters cannot be achieved in practice at the present time.
 However, I also think that 1000 samples at L= 16 might be adequate, so
 maybe it could be done.
 
+
 Our reply:
 The referee suggests that we study 1000 samples at L=16, so
 we did simulated 11,200 samples at L=16, and included the results in
@@ -35,4 +36,7 @@ temperature. Thus, We showed that due to the nature of the susceptibilities,
 a small number of samples such as 1000 is not adequate to give meaningful
 results.
 
-We hope that the current version of the paper is found suitable for publication.
+As suggested by the first referee, we honestly present
+our results, which reveal the difficulty with current methods and computing
+capabilities in dealing with this problem. We hope that the current version of
+the paper is found suitable for publication.
