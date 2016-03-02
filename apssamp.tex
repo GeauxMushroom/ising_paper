@@ -433,7 +433,7 @@ not be a good indicator.
 \label{fig:hist_chi}
 \end{figure}
 
-Here, we used the geometrical average over the susceptibilities to find $R_{12}$,
+Here, we used the geometrical average \cite{PhysRevB.88.134204} over the susceptibilities to find $R_{12}$,
 as shown in Fig \ref{fig:r12_gmean}.
 We see that the lines are quite different from those obtained with arithmetic 
 mean, and the crossings appear at different temperatures. 
@@ -456,8 +456,9 @@ standing problem of whether mean field behavior, specifically a spin glass phase
 exist in such a model without time-reversal symmetry. We focus on the equilibrium quantities
 of this notoriously difficult system. By taking advantage of the new commodity multi-threaded 
 graphic computing units architecture we drastically reduce the computation time. 
-The results for the Binder ratio and correlation length show no signal of intersection, thus they point to the absence of spin glass transition
-according to conventional wisdom. On the other hand, the ratio of susceptibilities 
+The results for the Binder ratio and correlation length show no signal of intersection, 
+thus they point to the absence of spin glass transition
+as that in the previous studies. On the other hand, the ratio of susceptibilities 
 $R_{12}$ does show crossing behavior for relatively small system sizes ($L=6,8,10$). 
 We did perform simulations for larger system sizes, 
 but we are not confident that those simulations reach equilibrium since the data is too noisy in particular for $R_{12}$.
@@ -467,13 +468,17 @@ This situation is rather discouraging, as simulations at this low temperature
 for much larger system sizes using the present method are daunting. 
 Although we can not reach a definitive conclusion on whether a spin glass phase 
 transition under a finite magnetic field,
-we show that the distribution of susceptibilities are not normally distributed 
+We that the distribution of susceptibilities are not normally distributed 
 and mean is dominated by rare events.
+This motivated us to study the geometric average of the distribution. 
+We showed that for different system sizes, there is similar crossing behavior 
+in the $R_{12}$ calculated from the geometric average. 
+
 This shows that the current numerical methods and computing capability are 
 still limited and not robust enough to provide an insight into the nature 
 of spin glass in 3D, and that we need either a different method to study the 
 distribution of data, or an exponential increase in computing power, to gain 
-more knowledge in this field.
+more knowledge for this problem.
 
 
 %This calls for a more thorough study on the model with different approaches.
