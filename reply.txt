@@ -1,99 +1,103 @@
 Dear Editor:
 
-We would like to resubmit our revised manuscript “Three-dimensional 
-Edwards-Anderson spin glass model in an external field”, which was previously 
+We would like to resubmit our revised manuscript “Three-dimensional
+Edwards-Anderson spin glass model in an external field”, which was previously
 submitted to Physical Review E under the number ER11202.
 
-In this work, we present our study on the ratio of susceptibilities for non-zero momentum
-as a measure for detecting possible spin glass transition in the three-dimensional Edwards-Anderson spin 
-glass model in an external field. This quantity has demonstrated to work well in four 
-dimensional Edwards-Anderson spin glass model, and in some one-dimensional models with long 
-range coupling. Together With the continuous advance of numerical scheme, a breakthrough in numerical spin glass 
-simulation often comes with the use of new method to analyze the data around the putative 
-critical point. Therefore, the recent success of using the ratio of susceptibilities for non-zero momentum
-naturally lead to a high expectation that this quantity can resolve or provide new 
-insights towards the understanding of this long standing problem in the statistical physics. 
-For this reason, we believe the result we presented from our extensive simulation using the 
-advanced algorithms and computing architectures is an important result in this new direction
-of analyzing the ratio of susceptibilities at non-zero momentum. 
+In this work, we present our study on the ratio of susceptibilities for non-zero
+momentum as a measure for detecting possible spin glass transition in the
+three-dimensional Edwards-Anderson spin glass model in an external field. This
+quantity has demonstrated to work well in four-dimensional Edwards-Anderson spin
+glass model and in some one-dimensional models with long-range coupling. Together
+with the continuous advance of numerical scheme, a breakthrough in numerical spin
+glass simulation often comes with the use of the new method to analyze the data
+around the putative critical point. Therefore, the recent success of using the
+ratio of susceptibilities for non-zero momentum naturally lead to a high
+expectation that this quantity can resolve or provide new insights towards the
+understanding of this long-standing problem in the statistical physics.  For this
+reason, we believe the result we presented from our extensive simulation using the
+advanced algorithms and computing architectures is an important result in this new
+direction of analyzing the ratio of susceptibilities at non-zero momentum. 
 
-We would like to thank the referee for a careful review of our manuscript.
-The first referee recommended the publication of our work. As the first referee points out,
-we honestly present our results, which reveal the difficulty with current 
-methods and computing capabilities in dealing with this problem. 
-The other two referees against the publication of our work, due 
-to the lack of a definitive conclusion. While we do not feel it is responsible 
-to provide a conclusion for the model based on the data we obtained, 
-we do provide many important results regarding the origin of the difficulties of using the ratio of 
-susceptibilities as a measure of spin glass phase transition. The difficulties 
-do go beyond the conventional wisdom of studying the Binder ratio or correlation lengths. 
+We would like to thank the referee for a careful review of our manuscript. The
+first referee recommended the publication of our work. As the first referee points
+out, we honestly present our results, which reveal the difficulty with current
+methods and computing capabilities in dealing with this problem. The other two
+referees suggested against the publication of our work, due to the lack of a
+definitive conclusion. While we do not feel it is responsible for providing a
+conclusion for the model based on the data we obtained, we do provide many
+important results regarding the origin of the difficulties of using the ratio of
+susceptibilities as a measure of spin glass phase transition. The difficulties do
+go beyond the conventional wisdom of studying the Binder ratio or correlation
+lengths. 
 
-In the revised manuscript we provide more in-depth details on these difficulties. First, 
-we analyze the distribution of the susceptibilities at higher momentum. The analysis reveals
-a highly skew nature of the distribution. Second, due to this highly skewed nature, we use the 
-geometrical average to calculate the disorder averaged susceptibilities. The results suggest that 
-this still cannot unambiguously resolve the existence of phase transition. Third, we provide new analysis 
-based on the suggestion of one of the referee by studying larger systems sizes with fewer number of disorder
-realizations. We found that unlike the conventional wisdom from simulating the model in the absence of an 
-external field, few thousands disorder realization cannot provide any meaningful signal at all. This result 
-further highlights the difficulty of using the ratio of susceptibilities as an indicator. 
+In the revised manuscript we provide more in-depth details on these difficulties.
+First, we analyze the distribution of the susceptibilities at higher momentum. The
+analysis reveals a highly skew nature of the distribution. Second, due to this
+highly skewed nature, we use the geometrical average to calculate the disorder
+averaged susceptibilities. The results suggest that this still cannot
+unambiguously resolve the existence of phase transition. Third, we provide new
+analysis based on the suggestion of one of the referee by studying larger systems
+sizes with a fewer number of disorder realizations. We found that unlike the
+conventional wisdom from simulating the model in the absence of an external field,
+few thousands disorder realization cannot provide any meaningful signal at all.
+This result further highlights the difficulty of using the ratio of
+susceptibilities as an indicator. 
 
-Finally, from the above new results which haven't been explored in the past, we propose that 
-a possible direction for the future study should go beyond simply calculating average value 
-of some quantities, such as susceptibilities. The disorder nature in both the spatial and temporal
-directions from this problem should take advantage of the advance of the big data analysis. Various
-clustering, and pattern recognition methods develop should provide new opportunity for the analysis 
-of data from spin glass simulations. 
+Finally, from the above new results which haven't been explored in the past, we
+propose that a possible direction for the future study should go beyond simply
+calculating the average value of some quantities, such as susceptibilities. The
+disordered nature in both the spatial and temporal directions from this problem
+should benefit from the advance of the big data analysis. Various clustering and
+pattern recognition methods develop should provide new opportunities for the
+analysis of data from spin glass simulations. 
 
-We believe the revised manuscript contains new results which have not been explored. While we
-cannot conclude whether a phase transition exists in the present model, the results we obtained
-do help to point to the possible direction of the future study. In the following, 
-we address the comments and criticisms that were raised by the referees. 
+We believe the revised manuscript contains new results which have not been
+explored. While we cannot conclude whether a phase transition exists in the
+present model, the results we obtained do help to point to the possible direction
+of the future study. In the following, we address the comments and criticisms that
+were raised by the referees. 
 
 Quote from the second referee"
-The authors conclude that "a rigorous data
-analysis does not seem to deliver unbiased information", which
-suggests that this paper cannot give a conclusion."
+The authors conclude that 'a rigorous data analysis does not seem to deliver
+unbiased information', which suggests that this paper cannot give a conclusion."
 
 Our reply:
-As the referee points out, we cannot reach a definite conclusion on
-whether there is a phase transition in the spin glass under a small
-magnetic field. However, with further analysis of our data, we show that
-the skewed distribution of susceptibilities are the reason for the
-bad behavior of $R_{12}$, which leads to our new conclusion that
-this quantity is dominated by rare events, and thus a huge number of
-realizations are required to reach meaningful results, which is a challenge
-to the computing capability we currently have.
+As the referee points out, we cannot reach a definite conclusion on whether there
+is a phase transition in the spin glass under a small magnetic field. However,
+with further analysis of our data, we show that the skewed distribution of
+susceptibilities is the reason for the bad behavior of $R_{12}$, which leads to
+our new conclusion that this quantity is dominated by rare events, and thus a huge
+number of realizations are required to reach meaningful results, which is a
+challenge to the computing capability we currently have.
 
 Quote from the third referee"
-If I was going to try to do a calculation like this one, I
-would use h= 0.25, at least, and I would expect to need to get to at
-least L= 16 to get a meaningful result. The authors may say that these
-parameters cannot be achieved in practice at the present time.
-However, I also think that 1000 samples at L= 16 might be adequate, so
-maybe it could be done."
+If I was going to try to do a calculation like this one, I would use h= 0.25, at
+least, and I would expect to need to get to at least L= 16 to get a meaningful
+result. The authors may say that these parameters cannot be achieved in practice
+at the present time. However, I also think that 1000 samples at L= 16 might be
+adequate, so maybe it could be done."
 
 
 Our reply:
-The referee suggests that we study 1000 samples at L=16, so
-we did simulated 11,200 samples at L=16, and included the results in
-the discussion. We divided the samples into 4 groups, each with 2800
-samples, and calculated $R_{12}$ for each group. The results for
-the five groups are very different from each other, especially at low
-temperature. Thus, We showed that due to the nature of the susceptibilities,
-a small number of samples such as 1000 is not adequate to give meaningful
-results.
+The referee suggests that we study 1000 samples at L=16, so we did simulated
+11,200 samples at L=16, and included the results in the discussion. We divided the
+samples into 4 groups, each with 2800 samples, and calculated $R_{12}$ for each
+group. The results for the five groups are very different from each other,
+especially at low temperature. Thus, We showed that due to the nature of the
+susceptibilities, a small number of samples such as 1000 is not adequate to give
+meaningful results.
 
 
 Summary of changes to the manuscript:
-We added figures and discussions for the distribution of susceptibilities
-in section III.
+We added figures and discussions for the distribution of susceptibilities in
+section III. 
 We added the results for geometric average in section III.
-We adjust the conclusion part to discuss the results we obtained 
-	with the distribution and the geometric average.
+We adjust the conclusion part to discuss the results we obtained with the
+distribution and the geometric average.
 We added some reference.
-We added figure and discussion for a simulation of L=16 with a small 
-number of realizations in the appendix.
+We added figure and discussion for a simulation of L=16 with a small number of
+realizations in the appendix.
 
 
 We hope that the current version of the paper is found suitable for publication.
