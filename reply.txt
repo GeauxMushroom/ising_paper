@@ -80,7 +80,7 @@ adequate, so maybe it could be done."
 
 
 Our reply:
-The referee suggests that we study 1000 samples at L=16, so we did simulated
+The referee suggests that we study 1000 samples at L=16, so we did simulate
 11,200 samples at L=16, and included the results in the discussion. We divided the
 samples into 4 groups, each with 2800 samples, and calculated $R_{12}$ for each
 group. The results for the five groups are very different from each other,
