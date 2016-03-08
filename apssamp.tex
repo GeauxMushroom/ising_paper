@@ -450,66 +450,59 @@ as a function of inverse temperature, for different system sizes.
 
 
 \section{Discussions and Conclusions}
-In summary, we perform Monte Carlo simulations of the three dimensional
-Edwards-Anderson model in a finite external field. The goal is to reexamine the long 
-standing problem of whether mean field behavior, specifically a spin glass phase, can
+In summary, we perform Monte Carlo simulations of the three-dimensional
+Edwards-Anderson model in a finite external field. The goal is to reexamine the 
+long-standing problem of whether mean field behavior, specifically a spin glass phase, can
 exist in such a model without time-reversal symmetry. We focus on the equilibrium quantities
 of this notoriously difficult system. By taking advantage of the new commodity multi-threaded 
-graphic computing units architecture we drastically reduce the computation time. 
-The results for the Binder ratio and correlation length show no signal of intersection, 
-thus they point to the absence of spin glass transition
-as that in the previous studies. On the other hand, the ratio of susceptibilities 
-$R_{12}$ does show crossing behavior for relatively small system sizes ($L=6,8,10$). 
-We did perform simulations for larger system sizes, 
-but we are not confident that those simulations reach equilibrium since the data is too noisy in particular for $R_{12}$.
+graphic computing units architecture we drastically reduce the computation time. The results 
+for the Binder ratio and correlation length for different cluster sizes show no signal of an 
+intersection, thus they point to the absence of a spin glass transition
+as found in  previous studies. On the other hand, the ratio of susceptibilities 
+$R_{12}$ does show an intersection for relatively small system sizes ($L=6,8,10$). 
+We did perform simulations for larger system sizes, but this data 
+is too noisy in particular for $R_{12}$ to draw a conclusion.
 With the present system sizes and the statistical error bar, a rigorous data 
 analysis does not seem to deliver unbiased information. 
 This situation is rather discouraging, as simulations at this low temperature 
 for much larger system sizes using the present method are daunting. 
 Although we can not reach a definitive conclusion on whether a spin glass phase 
-transition under a finite magnetic field,
-We that the distribution of susceptibilities are not normally distributed 
-and mean is dominated by rare events.
+transition exists under a finite magnetic field,
+we showed that the susceptibilities are not normally distributed and mean is 
+dominated by rare events.
 This motivated us to study the geometric average of the distribution. 
 We showed that for different system sizes, there is similar crossing behavior 
 in the $R_{12}$ calculated from the geometric average. 
 
 
-%%%%%%%%%%%% adding
-The results is obtained with a very small external field, $h=0.1$. It is possible
+The results are obtained with a very small external field, $h=0.1$. It is possible
 that a larger field, such as $h=0.25$, would give us a stronger signal of crossing.
 While this may give us a slightly clearer signal on the phase transition, should 
-the transition exist at h=0.25, it would likely be at quite a bit lower temperature
+the transition exist at h=0.25, it would likely occur at a significantly lower temperature
 which further jeopardizes the quality of the simulation data. As the result stands now, 
 we cannot find a clear phase transition in h=0.1, and if there were no phase transition, 
 it would also rule out the possibility of the transition occurring in a larger field. 
 On the other hand, if we found evidence for the absence of a transition at h=0.25, we 
 cannot determine if the spin glass phase would survive a smaller field like h=0.1. 
 There is no simple rule of thumb which can be used to determine what value of h is 
-the best for the purpose of answering the question on the existence of the transition under an 
-external magnetic field. But we believe that the possible advantage of using h=0.25 does
-not outweigh the advantage of using h=0.1, both in term of the difficult of the simulation, and
-the predictive power. Therefore, we think using h=0.1 is appropriate  
-for the problem we are studying.
+the best for the purpose of answering the question on the existence of the transition 
+under an external magnetic field. But we believe that the possible advantage of using  
+a larger field does not outweigh the disadvantages, both in term of the difficultly
+of the simulation, and its predictive power. 
 
-
-%%%%%%%%%%%%
-
-%%%%%%%%%%%%% adding
+ 
 Due to our efficient GPU implementation, we were able to leverage the computing
-power of clusters with GPU accelerators, and study a large number of disorder
+power of supercomputing clusters with GPU accelerators, and study a large number of disorder
 realizations.
-%%%%%%%%%%%%%%  
-Our results show that the current numerical methods and computing capability are 
-still limited and not robust enough to provide an insight into the nature 
-of spin glass in 3D, and that we need either a different method to study the 
-distribution of data, or an exponential increase in computing power, to gain 
+Our results show that with current numerical methods and computing capability obtainable 
+results are still not robust enough to provide dispositive insight into the nature 
+of a spin glass in 3D, and that we need either a different method to study the 
+distribution of the data, or an exponential increase in computing power to gain 
+
 more knowledge for this problem. 
-%%%%%%%%%%%%%%% adding 
 We also think that any previous research based on the susceptibilities may 
 suffer from the same problem, and the results from these work may be improved
 by including a much larger of samples.
-%%%%%%%%%%%%%%%%
 
 %This calls for a more thorough study on the model with different approaches.
 %Possible directions include: 1) using models with continuous random distribution which are 
