@@ -474,12 +474,33 @@ This motivated us to study the geometric average of the distribution.
 We showed that for different system sizes, there is similar crossing behavior 
 in the $R_{12}$ calculated from the geometric average. 
 
-This shows that the current numerical methods and computing capability are 
+
+%%%%%%%%%%%% adding
+The results is obtained with a very small external field, $h=0.1$. It is possible
+that a larger field, such as $h=0.25$, would give us a stronger signal of crossing.
+However, as the result stands now, we cannot find a clear phase transition in 
+h=0.1, and if there were no phase transition, it would also rule out the possibility 
+of the transition occurring in a larger field. On the other hand, if we found evidence 
+for the absence of a transition at h=0.25, we cannot determine if the spin glass 
+phase would survive a smaller field like h=0.1. Therefore, we think using h=0.1 
+is more appropriate for the problem we are studying.
+%%%%%%%%%%%%
+
+%%%%%%%%%%%%% adding
+Due to our efficient GPU implementation, we were able to leverage the computing
+power of clusters with GPU accelerators, and study a large number of disorder
+realizations.
+%%%%%%%%%%%%%%  
+Our results show that the current numerical methods and computing capability are 
 still limited and not robust enough to provide an insight into the nature 
 of spin glass in 3D, and that we need either a different method to study the 
 distribution of data, or an exponential increase in computing power, to gain 
-more knowledge for this problem.
-
+more knowledge for this problem. 
+%%%%%%%%%%%%%%% adding 
+We also think that any previous research based on the susceptibilities may 
+suffer from the same problem, and the results from these work may be improved
+by including a much larger of samples.
+%%%%%%%%%%%%%%%%
 
 %This calls for a more thorough study on the model with different approaches.
 %Possible directions include: 1) using models with continuous random distribution which are 
