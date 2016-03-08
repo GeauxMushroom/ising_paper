@@ -24,11 +24,18 @@ first referee recommended the publication of our work. As the first referee poin
 out, we honestly present our results, which reveal the difficulty with current
 methods and computing capabilities in dealing with this problem. The other two
 referees suggested against the publication of our work, due to the lack of a
-definitive conclusion. While we do not feel it is responsible for providing a
-conclusion for the model based on the data we obtained, we do provide many
+definitive conclusion.
+%%%%%%%%%% ?
+While we do not think the data we obtained is sufficient for providing a
+conclusion on the nature of this model,  
+
+While we do not feel it is responsible for providing a
+conclusion for the model based on the data we obtained,
+%%%%%%%%%%%%
+we do provide many
 important results regarding the origin of the difficulties of using the ratio of
-susceptibilities as a measure of spin glass phase transition. The difficulties do
-go beyond the conventional wisdom of studying the Binder ratio or correlation
+susceptibilities as a measure of spin glass phase transition. The difficulties
+do go beyond the conventional wisdom of studying the Binder ratio or correlation
 lengths. 
 
 In the revised manuscript we provide more in-depth details on these difficulties.
@@ -41,8 +48,13 @@ analysis based on the suggestion of one of the referee by studying larger system
 sizes with a fewer number of disorder realizations. We found that unlike the
 conventional wisdom from simulating the model in the absence of an external field,
 few thousands disorder realization cannot provide any meaningful signal at all.
+%%%%%Adding
+This is also consistent with previous points, as the skewed distribution of the
+susceptibilities leads to the fact that the system is dominated by rare events,
+and thus a large number of disorder realizations is necessary.
+%%%%%%%%%%%%%%%
 This result further highlights the difficulty of using the ratio of
-susceptibilities as an indicator. 
+susceptibilities as an indicator.
 
 Finally, from the above new results which haven't been explored in the past, we
 propose that a possible direction for the future study should go beyond simply
@@ -87,6 +99,18 @@ group. The results for the five groups are very different from each other,
 especially at low temperature. Thus, We showed that due to the nature of the
 susceptibilities, a small number of samples such as 1000 is not adequate to give
 meaningful results.
+%%%%%%%%%%%%%%
+The referee also suggests using h=0.25 instead of h=0.1. We agree that this
+may give us a stronger signal on the phase transition. However, as the result
+stands now, we cannot find a clear phase transition in h=0.1, and if there were
+no phase transition, it would also rule out the possibility of the transition
+occurring at h=0.25. On the other hand, if we found evidence for the absence of
+a transition at h=0.25, we cannot determine if the spin glass phase would survive
+a smaller field like h=0.1. Therefore, we think using h=0.1 is more appropriate
+for the problem we are studying.
+We would like to thank the referee for the suggestions as they help us to
+refine our conclusions. 
+%%%%%%%%%%%%%%%%%
 
 
 Summary of changes to the manuscript:
@@ -98,7 +122,9 @@ distribution and the geometric average.
 We added some reference.
 We added figure and discussion for a simulation of L=16 with a small number of
 realizations in the appendix.
-
+%%%%%%%%%%%%%
+We added discussion of the advantage and disadvantage of using h=0.25. 
+%%%%%%%%%%%%%
 
 We hope that the current version of the paper is found suitable for publication.
 
