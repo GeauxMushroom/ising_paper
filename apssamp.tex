@@ -143,11 +143,11 @@ solution is unstable towards replica symmetry breaking (RSB) \cite{Almedia-Thoul
 The replica overlap has more structure than simply a constant. The way to 
 characterize this structure for a stable mean field solution was developed 
 by Parisi \cite{Parisi-1980a,Parisi-1980b,Parisi-1980c}.  There is a hierarchy 
-of the replica overlap, and this can be described in terms of an ultra-metric tree. 
+of the replica overlap, and this can be described in terms of an ultrametric tree. 
 The replica symmetry breaking scheme resolved the negative entropy crisis and naturally 
 explained the many solutions found in the TAP approach.
 
-The RSB theory is accepted to be the correct description of the SK model; indeed 
+The RSB theory is accepted to be the correct description of the SK model; indeed, 
 it provides the exact free energy \cite{Talagrand-2006,Guerra-2003}. 
 However, its applicability to low dimensional spin glass systems has been intensively debated 
 over the last three decades, especially in the three dimensions case. For systems 
@@ -158,10 +158,10 @@ domain wall scaling by Moore, Bray and McMillan \cite{McMillan-1984,Bray-Moore-1
 In this theory, there exists a finite characteristic length scale where droplets of 
 excitations can lose energy by aligning with the field. The spin glass phase is thus 
 destroyed by any finite external field. Moreover, those excitations are assumed to 
-be compact and with fractal dimension smaller than the spacial dimension, in contrast 
+be compact and with a fractal dimension smaller than the spacial dimension, in contrast 
 with the space-filling excitations in the mean field theory. 
 
-Thus a possible scheme to discern between the RSB and the droplet theories is to determine
+Thus, a possible scheme to discern between the RSB and the droplet theories is to determine
 whether a spin glass phase exists at a finite external field \cite{Young-Katzgraber2004}. 
 There are other schemes based on the differences in the overlap and the excitations in these two theories. 
 For example, the distribution of the overlap and the parameters that characterize it \cite{Hatano-Gubernatis-2002, 
@@ -174,13 +174,13 @@ Unfortunately, the conclusions drawn from different studies are often controvers
 This is mostly due to two factors, the limitation in the system sizes that can be 
 simulated and the interpretation of the data. 
 
-Using the same techniques on the three dimensional EA model under an external field, no signal of 
+Using the same techniques on the three-dimensional EA model under an external field, no signal of 
 a crossing of the scaled correlation length for different system sizes can be 
 detected\cite{Young-Katzgraber2004}.  We will show this is also 
 the case for the Binder ratio.  The absence of crossing is powerful evidence that a spin
 glass phase is absent in the presence of an external field. However, it has been 
 argued that the system sizes studied may be too small and far from the scaling 
-regime. To remedy this problem, one dimensional models with long range power-law 
+regime. To remedy this problem, one-dimensional models with longr-range power-law 
 decaying interactions \cite{Kotliar-Anderson-Stein-1983} which mimic the short range models 
 at higher dimensions have been intensively studied over the last few years \cite{Katzgraber-Young-2003a,Katzgraber-Young-2003b,
 Leuzzi-1999}. In these models much larger systems can be studied \cite{Katzgraber-Larson-Young-2009,
@@ -197,14 +197,14 @@ been shown that in four dimensions this quantity displays a crossing
 at finite temperature which is an important clue that the spin glass can still 
 exist without time reversal symmetry below the upper critical dimension \cite{Banos-2012}. 
 Giving the success of using $R_{12}$ to capture the spin glass phase
-at four dimensions, we reexamine the three dimensional EA model on a simple cubic lattice using 
+at four dimensions, we reexamine the three-dimensional EA model on a simple cubic lattice using 
 a new development in computer architecture, and the recently proposed $R_{12}$. 
 We will demonstrate that graphic card computing is particularly well suited for 
 equilibrium simulations of spin glass systems, in particular for cases where a huge number 
 of realizations is required such as the model we study in this work. 
 
 The paper is organized as follows: The simulation methods and the quantities we measured 
-are introduced in the Section II. In the section III, we show the data from our simulations.
+are introduced in section II. In section III, we show the data from our simulations.
 We conclude our results and discuss the possible directions for the future study in the
 section IV.
 
@@ -315,11 +315,11 @@ The jackknife method is used to estimate the statistical errors from disorder av
 
 \section{Results} 
 We plot the spin glass susceptibility in Fig. \ref{fig:Chi}. As in the 
-zero field case, the susceptibility increases as the temperature is lowered, however there is
+zero field case, the susceptibility increases as the temperature is lowered. However, there is
 no obvious asymptotic scaling behavior. In particular, for temperatures below  
 the zero-field critical temperature, the
 slope of the curves decreases and they begin to bend downward. This result is similar to the one obtained for
-the one dimensional model\cite{Larson-etal-2013}, but in contrast with the results of the four dimensional lattice 
+the one-dimensional model\cite{Larson-etal-2013}, but in contrast with the results of the four-dimensional lattice 
 which displays asymptotic divergent susceptibilities \cite{Marinari-etal-1998}.
 
 \begin{figure}[ht]
@@ -330,13 +330,13 @@ for system sizes $L=6,8,10$.}
 
 
 As the susceptibility does not show a behavior in accordance with the conventional 
-finite size scaling theory for a second order transition, we move to study various 
+finite-size scaling theory for a second order transition, we move to study various 
 cumulants and ratios of susceptibilities of the overlap parameter. We show the Binder ratio in Fig.~\ref{fig:Binder}. It does not display any signal of crossing. 
 Indeed, the curves for different system sizes do not even tend to merge as the temperature 
 is lowered.  Note that the Binder ratio corresponds to the fourth-order cumulant of the 
 distribution, and 
 %spin glass susceptibility at zero momentum. 
-the possible issues related with the soft mode  
+the possible issues related to the soft mode  
 contributing to the zero momentum susceptibility should likely be canceled in the Binder ratio \cite{Banos-2012}.
 
 \begin{figure}[ht]
@@ -358,16 +358,16 @@ there is no crossing or even merging down to a rather low temperature~\cite{Youn
   \caption{\label{fig:c-h0} Scaled correlation length $\xi/L$ as a function of inverse temperature for system sizes $L=6,8,10$.  }
 \end{figure}
 
-From now on we focus on $R_{12}$. We performed simulations in zero field
+From now on we focus on $R_{12}$. We performed simulations in a zero field
 where $R_{12}$ shows a crossing close to the expected critical temperature found from
 the Binder ratio and the correlation. Therefore, the crossing in $R_{12}$ should 
-be a viable indicator for the phase transition. Unfortunately, we find that $R_{12}$ is in 
-general much noisier than other quantities. This is due to the fact that the sampling 
+be a viable indicator for the phase transition. Unfortunately, we find that $R_{12}$ is, 
+in general, much noisier than other quantities. This is due to the fact that the sampling 
 of higher momentum quantities is almost always characterized by larger statistical 
 fluctuations. Taking the ratio between two susceptibilities at finite momenta clearly further
 harms the quality of the data. To reduce the error bars we generate long runs and larger 
 pools of disorder realizations (see Table \ref{tab:parameters}). This is the main reason we have generated a rather large number ($2.4 \times 10^5$) of realizations 
-for the largest systems size we present here, and even more for smaller sizes. To further reduce the 
+for the largest systems size we present here and even more for smaller sizes. To further reduce the 
 fluctuations, we impose all point group symmetries. For example, when we calculate 
 $\chi(2\pi/L,0,0)$ we average the susceptibility at three different directions 
 ($\chi(2\pi/L,0,0)$, $\chi(0,2\pi/L,0)$, and $\chi(0,0,2\pi/L)$). This averaging implicitly assumes 
@@ -394,7 +394,7 @@ Carlo sweeps in Fig.~\ref{fig:MCsteps}. We believe the data is sufficiently equi
 The major contribution to the error is from the limited number of disorder realizations. Fig.~\ref{fig:R12_l10_samples} shows $R_{12}$ 
 for $L=10$ for different numbers of realizations. We clearly see that the data converges only when the number of realizations is fairly large.
 This is one of the prominent hurdles of using higher momentum susceptibility as a diagnosis. 
-We note that the effective one dimensional model also shows crossing behavior,
+We note that the effective one-dimensional model also shows crossing behavior,
 albeit the crossing points do not show a systematic trend\cite{Larson-etal-2013}.
 
 
@@ -419,16 +419,24 @@ Given the difficulty in using the $R_{12}$, we investigate the source of the noi
 by studying the distribution of the susceptibility. We calculate the susceptibility
 for each disorder realization, and plotted the histogram at the lowest temperature,
 $\beta=1.8$. The distribution is highly skewed. The mean of the distribution is dominated by rare
-events, as suggested in Fig \ref{fig:hist_chi}.
+events, as suggested in Fig \ref{fig:hist_chi1} and \ref{fig:hist_chi2}.
 The non-Gaussian nature of the distribution suggests that the mean value might 
 not be a good indicator. 
 
 \begin{figure}[ht]
   \centering
-  \includegraphics[width=0.4\textwidth]{img/chi_1_dist.pdf}
+  \includegraphics[width=0.4\textwidth]{img/chi1_18.png}
   \caption{Histogram for $\chi_1$ at low temperature.}
-\label{fig:hist_chi}
+\label{fig:hist_chi1}
 \end{figure}
+
+\begin{figure}[ht]
+  \centering
+  \includegraphics[width=0.4\textwidth]{img/chi2_18.png}
+  \caption{Histogram for $\chi_2$ at low temperature.}
+\label{fig:hist_chi2}
+\end{figure}
+
 
 As a first attempt to handle the distribution which is dominated by rare samples, 
 we used the geometrical average \cite{PhysRevB.88.134204} over the susceptibilities to find $R_{12}$.
@@ -456,7 +464,7 @@ exist in such a model without time-reversal symmetry. We focus on the equilibriu
 of this notoriously difficult system. By taking advantage of the new commodity multi-threaded 
 graphic computing units architecture we drastically reduce the computation time. The results 
 for the Binder ratio and correlation length for different cluster sizes show no signal of an 
-intersection, thus they point to the absence of a spin glass transition
+intersection, thus, they point to the absence of a spin glass transition
 as found in previous studies. On the other hand, the ratio of susceptibilities 
 $R_{12}$ does show intersections for relatively small system sizes ($L=6,8,10$). 
 We did perform simulations for larger system sizes, but the data for $R_{12}$ 
@@ -476,7 +484,7 @@ in the $R_{12}$ as those calculated from the linear average.
 
 The results are obtained with a rather small external field, $h=0.1$. It is possible
 that a larger field, such as $h=0.25$, would give us a stronger signal of crossing 
-perdominately due to the distance away from the known critical point at $h=0$. 
+predominately due to the distance away from the known critical point at $h=0$. 
 While this may give us a slightly clearer signal on the phase transition, should 
 the transition exist at $h=0.25$, it would likely occur at a significantly lower temperature
 which further jeopardizes the quality of the simulation data. As the result stands now, 
@@ -487,15 +495,15 @@ cannot determine if the spin glass phase would survive a smaller field like $h=0
 There is no simple rule of thumb which can be used to determine what value of $h$ is 
 the best for the purpose of answering the question on the existence of the transition 
 under an external magnetic field. But we believe that the possible advantage of using  
-a larger field does not outweigh the disadvantages, both in term of the difficultly
+a larger field does not outweigh the disadvantages, both in term of the difficulty
 of the simulation, and its predictive power. 
 
 Thanks to our efficient GPU implementation, we are able to leverage the computing
 power of supercomputing clusters with GPU accelerators, and study a large number of disorder
 realizations. Our results show that with current numerical methods and computing capability  
-results obtainable in a reasonable amount of time and resoucce are still not robust enough 
+results obtainable in a reasonable amount of time and resources are still not robust enough 
 to provide dispositive insight into the nature of a spin glass at three dimensions. This makes a call 
-to the method of interpretating the data. We propose that a possible direction for the 
+to the method of interpreting the data. We propose that a possible direction for the 
 future study should go beyond simply calculating the average value of critical quantities, 
 such as susceptibilities. The disordered nature in both the spatial and temporal directions 
 should benefit from recent advances in big data analysis. Various clustering and
@@ -512,7 +520,7 @@ is used to expose the silent features from the data \cite{Baity-Jesi-etal-2014}.
 We further tested with a bigger system size, $L=16$. We used $11,200$ realizations,
 and divide them into four batches, each containing $2800$ samples. We then calculated
 the $R_{12}$ for the four batches, and compared them, as shown in Fig \ref{fig:l16_r12}. 
-The results shows that a few thousand realizations is not enough, even for a 
+The results show that a few thousand realizations is not enough, even for a 
 system size of $L=16$. 
 
 
