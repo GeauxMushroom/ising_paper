@@ -76,17 +76,17 @@ We study the Edwards-Anderson model on a simple cubic lattice with a finite
 constant external field. We employ an indicator composed of a ratio of 
 susceptibilities at finite momenta, which was recently proposed to avoid 
 the difficulties of a zero momentum quantity, for capturing the spin glass 
-phase transition. Unfortunately, this new indicator is fairly noisy, so 
+phase transition. We find that this new indicator is fairly noisy, so 
 a large pool of samples at low temperature and small external field are 
 needed to generate results with sufficiently small statistical error for 
 analysis.  We thus implement the Monte Carlo method using graphics 
 processing units to drastically speed up the simulation. We confirm previous 
 findings that conventional indicators for the spin glass transition, including 
 the Binder ratio and the correlation length do not show any indication of a 
-transition for rather low temperatures.  However, the ratio of spin glass 
+transition for rather low temperatures. However, the ratio of spin glass 
 susceptibilities do show crossing behavior, albeit a systematic analysis 
-is beyond the reach of the present data. 
-This reveals the difficulty with current numerical methods and computing capability
+is beyond the reach of the present data. This reveals the difficulty with 
+current numerical methods and computing capability
 in studying this problem.
 %This calls for a more thorough study 
 %of the three dimensional Edwards-Anderson model in an external field. 
@@ -337,7 +337,7 @@ is lowered.  Note that the Binder ratio corresponds to the fourth-order cumulant
 distribution, and 
 %spin glass susceptibility at zero momentum. 
 the possible issues related with the soft mode  
-contributing to the zero momentum susceptibility should likely be canceled in the Binder ratio.
+contributing to the zero momentum susceptibility should likely be canceled in the Binder ratio \cite{Banos-2012}.
 
 \begin{figure}[ht]
   \includegraphics[width=0.45\textwidth]{img/binder.pdf}% Here is how to import EPS art
@@ -415,16 +415,13 @@ realizations from fifteen thousand to two hundred forty thousand.}
 \label{fig:R12_l10_samples}
 \end{figure}
 
-
-We studied the distribution of the susceptibilities. We calculated the susceptibility
+Given the difficulty in using the $R_{12}$, we investigate the source of the noise
+by studying the distribution of the susceptibility. We calculate the susceptibility
 for each disorder realization, and plotted the histogram at the lowest temperature,
-$\beta=1.8$.
-The distribution of susceptibilities are highly skewed. 
-The mean of the distribution is dominated by rare
-events, as suggested in Fig \ref{fig:hist_chi}. 
+$\beta=1.8$. The distribution is highly skewed. The mean of the distribution is dominated by rare
+events, as suggested in Fig \ref{fig:hist_chi}.
 The non-Gaussian nature of the distribution suggests that the mean value might 
 not be a good indicator. 
-
 
 \begin{figure}[ht]
   \centering
@@ -433,11 +430,13 @@ not be a good indicator.
 \label{fig:hist_chi}
 \end{figure}
 
-Here, we used the geometrical average \cite{PhysRevB.88.134204} over the susceptibilities to find $R_{12}$,
-as shown in Fig \ref{fig:r12_gmean}.
+As a first attempt to handle the distribution which is dominated by rare samples, 
+we used the geometrical average \cite{PhysRevB.88.134204} over the susceptibilities to find $R_{12}$.
+In the Fig \ref{fig:r12_gmean}, we show the plot of $R_{12}$ calculated from geometric averaging.
 We see that the lines are quite different from those obtained with arithmetic 
-mean, and the crossings appear at different temperatures. 
-
+mean, and the crossings appear at different temperatures. Rather this approach can 
+provide a better signal for phase transition is unclear at present, but is is worthwhile 
+for further investigation. 
 
 \begin{figure}[ht]
   \centering
@@ -458,77 +457,70 @@ of this notoriously difficult system. By taking advantage of the new commodity m
 graphic computing units architecture we drastically reduce the computation time. The results 
 for the Binder ratio and correlation length for different cluster sizes show no signal of an 
 intersection, thus they point to the absence of a spin glass transition
-as found in  previous studies. On the other hand, the ratio of susceptibilities 
-$R_{12}$ does show an intersection for relatively small system sizes ($L=6,8,10$). 
-We did perform simulations for larger system sizes, but this data 
-is too noisy in particular for $R_{12}$ to draw a conclusion.
+as found in previous studies. On the other hand, the ratio of susceptibilities 
+$R_{12}$ does show intersections for relatively small system sizes ($L=6,8,10$). 
+We did perform simulations for larger system sizes, but the data for $R_{12}$ 
+is too noisy to draw a conclusion.
 With the present system sizes and the statistical error bar, a rigorous data 
 analysis does not seem to deliver unbiased information. 
 This situation is rather discouraging, as simulations at this low temperature 
-for much larger system sizes using the present method are daunting. 
-Although we can not reach a definitive conclusion on whether a spin glass phase 
-transition exists under a finite magnetic field,
-we showed that the susceptibilities are not normally distributed and mean is 
-dominated by rare events.
+for much larger system sizes using the present method are already rather challenging.
+Although we cannot reach a definitive conclusion on whether a spin glass phase 
+transition exists under a finite magnetic field, we attempt to understand the 
+source of the noise in the $R_{12}$ We showed that the susceptibilities 
+are far from normally distributed and their mean is dominated by rare events.
 This motivated us to study the geometric average of the distribution. 
 We showed that for different system sizes, there is similar crossing behavior 
-in the $R_{12}$ calculated from the geometric average. 
+in the $R_{12}$ as those calculated from the linear average. 
 
 
-The results are obtained with a very small external field, $h=0.1$. It is possible
-that a larger field, such as $h=0.25$, would give us a stronger signal of crossing.
+The results are obtained with a rather small external field, $h=0.1$. It is possible
+that a larger field, such as $h=0.25$, would give us a stronger signal of crossing 
+perdominately due to the distance away from the known critical point at $h=0$. 
 While this may give us a slightly clearer signal on the phase transition, should 
-the transition exist at h=0.25, it would likely occur at a significantly lower temperature
+the transition exist at $h=0.25$, it would likely occur at a significantly lower temperature
 which further jeopardizes the quality of the simulation data. As the result stands now, 
-we cannot find a clear phase transition in h=0.1, and if there were no phase transition, 
+we cannot find a clear phase transition in $h=0.1$, and if there were no phase transition, 
 it would also rule out the possibility of the transition occurring in a larger field. 
-On the other hand, if we found evidence for the absence of a transition at h=0.25, we 
-cannot determine if the spin glass phase would survive a smaller field like h=0.1. 
-There is no simple rule of thumb which can be used to determine what value of h is 
+On the other hand, if we found evidence for the absence of a transition at $h=0.25$, we 
+cannot determine if the spin glass phase would survive a smaller field like $h=0.1$. 
+There is no simple rule of thumb which can be used to determine what value of $h$ is 
 the best for the purpose of answering the question on the existence of the transition 
 under an external magnetic field. But we believe that the possible advantage of using  
 a larger field does not outweigh the disadvantages, both in term of the difficultly
 of the simulation, and its predictive power. 
 
- 
-Due to our efficient GPU implementation, we were able to leverage the computing
+Thanks to our efficient GPU implementation, we are able to leverage the computing
 power of supercomputing clusters with GPU accelerators, and study a large number of disorder
-realizations.
-Our results show that with current numerical methods and computing capability obtainable 
-results are still not robust enough to provide dispositive insight into the nature 
-of a spin glass in 3D, and that we need either a different method to study the 
-distribution of the data, or an exponential increase in computing power to gain 
+realizations. Our results show that with current numerical methods and computing capability  
+results obtainable in a reasonable amount of time and resoucce are still not robust enough 
+to provide dispositive insight into the nature of a spin glass at three dimensions. This makes a call 
+to the method of interpretating the data. We propose that a possible direction for the 
+future study should go beyond simply calculating the average value of critical quantities, 
+such as susceptibilities. The disordered nature in both the spatial and temporal directions 
+should benefit from recent advances in big data analysis. Various clustering and
+pattern recognition methods develop should provide new opportunities for the
+analysis of data from spin glass simulations. 
 
-more knowledge for this problem. 
-We also think that any previous research based on the susceptibilities may 
-suffer from the same problem, and the results from these work may be improved
-by including a much larger of samples.
-
-%This calls for a more thorough study on the model with different approaches.
-%Possible directions include: 1) using models with continuous random distribution which are 
-%easier to thermalize than that with bimodal distribution; 2) analyzing the
-%data for the distribution of the overlap parameter, instead of average quantities. 
-
-We notice a preprint before
-we finished the present paper where the conditioning variate method
+We notice a preprint before we finished the present paper where the conditioning variate method
 is used to expose the silent features from the data \cite{Baity-Jesi-etal-2014}. 
 
 
 \appendix
 \section{System with L=16}
 
-We further tested with a bigger system size, $L=16$. We used 11,200 realizations,
-and divide them into four batches, each containing 2800 samples. We then calculated
+We further tested with a bigger system size, $L=16$. We used $11,200$ realizations,
+and divide them into four batches, each containing $2800$ samples. We then calculated
 the $R_{12}$ for the four batches, and compared them, as shown in Fig \ref{fig:l16_r12}. 
 The results shows that a few thousand realizations is not enough, even for a 
-system size of L=16. 
+system size of $L=16$. 
 
 
 \begin{figure}[ht]
   \centering
   \includegraphics[width=0.4\textwidth]{img/l16_r12.pdf}
   \caption{$R_{12}$ for a larger system with $L=16$. We used four batches of samples,
-each batch contains 2800 disorder realizations. The results shows that for
+each batch contains $2800$ disorder realizations. The results shows that for
 different batches $R_{12}$ is quite different, especially at low temperatures.
 }
 \label{fig:l16_r12}
